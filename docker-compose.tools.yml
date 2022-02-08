@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  phpinsights:
+    build:
+      context: ./docker/local/tools
+      dockerfile: phpinsights.dockerfile
+    volumes:
+      - ./:/app
